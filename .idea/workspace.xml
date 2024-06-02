@@ -1,30 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="9b5ed03b-124e-4689-9599-41e751280e09" name="Changes" comment="" />
+    <list default="true" id="9b5ed03b-124e-4689-9599-41e751280e09" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/myweb/base/templates/base/meal_info.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/base/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/myweb/base/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/base/form.py" beforeDir="false" afterPath="$PROJECT_DIR$/myweb/base/form.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/base/templates/base/add_meal_to_room.html" beforeDir="false" afterPath="$PROJECT_DIR$/myweb/base/templates/base/add_meal_to_room.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/base/templates/base/delete.html" beforeDir="false" afterPath="$PROJECT_DIR$/myweb/base/templates/base/delete.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/base/templates/base/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/myweb/base/templates/base/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/base/templates/base/login_register.html" beforeDir="false" afterPath="$PROJECT_DIR$/myweb/base/templates/base/login_register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/base/templates/base/rooms.html" beforeDir="false" afterPath="$PROJECT_DIR$/myweb/base/templates/base/rooms.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/base/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/myweb/base/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/base/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/myweb/base/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/myweb/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/templates/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/myweb/templates/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/templates/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/myweb/templates/navbar.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Natia1997&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Natia1997/pythonProject4.git&quot;,
+    &quot;accountId&quot;: &quot;4352c552-2cfe-4a1c-84d3-fd46c7c3c140&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2hKCUqJzh006WRkcJnbk5E2T7s7" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="false" id="Update" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/Users/Administrator/Desktop/pythonProject1&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="pythonProject3" />
@@ -66,6 +110,17 @@
       <updated>1717333400821</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

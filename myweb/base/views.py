@@ -7,27 +7,27 @@ from django.contrib import messages
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.forms import UserCreationForm
-from django.core.paginator import Paginator
+from django.db.models import Q
 
-def home (request):
-    ro=Room.objects.all()
-    context={'ro': ro}
-    return render (request, 'base/home.html', context)
+
+def home(request):
+    ro = Room.objects.all()
+    q = request.GET.get('q') if request.GET.get('q') != None else ""
+    rooms = Room.objects.filter(Q(name__icontains=q) | Q(description__icontains=q))
+    context = {'ro': ro, 'rooms': rooms}
+    return render(request, 'base/home.html', context)
 
 
 def room(request, pk):
-
         room = Room.objects.get(id=int(pk))
         room_meals = room.meal_set.all()
-
-
-        context = {'room': room,'room_meals': room_meals}
+        context = {'room': room, 'room_meals': room_meals}
         return render(request, 'base/rooms.html', context)
 
 
 @login_required(login_url='login')
 def add_meal_to_room(request, pk):
-    room = Room.objects.get(id=pk)
+    room = Room.objects.get(id=int(pk))
 
     if request.method == 'POST':
         form = MealForm(request.POST, request.FILES)
@@ -42,17 +42,15 @@ def add_meal_to_room(request, pk):
     else:
         form = MealForm()
 
-    return render(request, 'base/add_meal_to_room.html', {'room': room, 'form': form})
+    return render(request, 'base/add_meal_to_room.html', {'room': room, 'form': form} )
 
 @login_required(login_url='login')
 def delete_room(request, pk):
     room = Room.objects.get(id=pk)
-
     context = {'obj': room}
     if request.user != room.host:
         return HttpResponse("<h1>You don't have permission!</h1>")
     if request.method == "POST":
-
         room.delete()
         return redirect('home')
     return render(request, 'base/delete.html', context)
@@ -104,7 +102,10 @@ def delete_meal(request, pk):
         return redirect('home')
 
     return render(request, 'base/delete.html', {'obj': meal})
+def meal_info(request, pk):
+    meal = Meal.objects.get(id=int(pk))
 
+    return render(request, 'base/meal_info.html', {'meal': meal})
 
 
 

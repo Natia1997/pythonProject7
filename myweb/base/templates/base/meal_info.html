@@ -1,22 +1,16 @@
 {% extends 'main.html' %}
 {% block content %}
+
             <div>
                 <div style="text-align: center;">
                     <h1 style="margin-left: 40px;">Cooking with a couple</h1>
 
-                    <a href="{% url 'add_meal_to_room' room.id %}" >Add Meal</a>
 
-                    <h1>{{ room.name }}</h1>
-                    <p> {{room.description}} </p>
-                </div>
-
-                <div>
-                {% for meal in room_meals %}
 
                         <div class="card mb-3" style="margin: 5% 20%">
                           <img src="{{meal.picture.url}}" class="card-img-top" alt="IMG">
                           <div class="card-body">
-                             <a href="{% url 'meal_info' meal.id %}">{{meal.name}}</a>
+                             <h3>{{ meal.name }}</h3>
                             <p class="card-text">{{meal.description}}</p>
                             <p class="card-text"><small class="text-body-secondary">{{meal.created|timesince}} ago</small></p>
                               <form action="{% url 'delete_meal' meal.id %}" method="post">
@@ -26,10 +20,5 @@
                           </div>
                         </div>
 
-
-
-                {% endfor %}
-                </div>
-            </div>
 
 {% endblock %}
