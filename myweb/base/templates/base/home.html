@@ -1,0 +1,20 @@
+{% block content %}
+
+<div style="text-align: center;">
+    <h1 style="margin-left: 40px;">Cooking with a couple</h1>
+    <h3 style="margin-left: 80px;">What is today's challenge?</h3>
+
+    {% for room in ro %}
+        <br>
+        <hr>
+        <a href="{% url 'room' room.id %}" style="color: red; text-decoration: none;">
+            <h3 style="color: red;">{{room.name}}</h3></a>
+
+
+
+
+    {%endfor%}
+</div>
+
+
+{% endblock %}
