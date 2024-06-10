@@ -11,11 +11,10 @@ from django.db.models import Q
 
 
 def home(request):
-    ro = Room.objects.all()
-    q = request.GET.get('q') if request.GET.get('q') != None else ""
-    rooms = Room.objects.filter(Q(name__icontains=q) | Q(description__icontains=q))
-    context = {'ro': ro, 'rooms': rooms}
-    return render(request, 'base/home.html', context)
+        room = Room.objects.get(id=int(pk))
+        room_meals = room.meal_set.all()
+        context = {'room': room, 'room_meals': room_meals}
+        return render(request, 'base/rooms.html', context)
 
 
 def room(request, pk):
